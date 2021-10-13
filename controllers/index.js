@@ -1,4 +1,5 @@
 module.exports = {
+    videogamesController: require.apply("./videogames"),
     cameras: require("./cameras"),
     makeup: require("./makeup"),
     guitars: require("./guitars"),

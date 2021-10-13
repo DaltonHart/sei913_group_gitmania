@@ -53,6 +53,10 @@ app.use("/fruit", controllers.fruit);
 // == Camera Routes
 app.use("/cameras", controllers.cameras);
 
+
+// ==Videogames Routes
+app.use("/videogames", controller.videogamesController);
+
 // fun route
 app.get("/help", function (req, res) {
   res.send({
