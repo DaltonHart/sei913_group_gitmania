@@ -29,19 +29,33 @@ app.use(methodOverride("_method"));
 
 /* === Routes === */
 
+
 // == Default Routes
 app.get("/", function (req, res, next) {
   return res.render("home");
 });
 
+// == Guitar Routes
+app.use("/guitars", controllers.guitars);
+// == Plant Routes
+app.use("/plants", controllers.plants);
 // == Makeup Routes
 app.use("/makeup", controllers.makeup);
-
+// Rock Routes
+app.use("/rock", controllers.rock);
 // == Pets Routes
-app.use("/pets", 
-  // (req, res) => { res.send('HIIII') }
-  (controllers.pets)
-);
+app.use("/pets", controllers.pets);
+// == Coin Routes
+app.use("/coin", controllers.coin);
+// == Fruit Routes
+app.use("/fruit", controllers.fruit);
+
+// == Camera Routes
+app.use("/cameras", controllers.cameras);
+
+
+// ==Videogames Routes
+app.use("/videogames", controllers.videogamesController);
 
 // fun route
 app.get("/help", function (req, res) {
@@ -54,6 +68,7 @@ app.get("/help", function (req, res) {
 app.get("/*", function (req, res) {
   res.send("404");
 });
+
 
 /* === Server Listener === */
 app.listen(PORT, function () {
