@@ -1,14 +1,26 @@
-// const express = require 
-// const router  express.Router()
-// shorthand 
+// const express = require("express");
+// const router = express.Router();
+
 
 const router = require("express").Router();
-const { guitars } = require(".");
 const {Guitars} = require("../models");
 
 //base url === guitars
-//index db
+
+
+//index 
 
 router.get("/.", function (req, res){
-   Guitars.find({}, function(error, foundGuitar ){})
+   Guitars.find({}, function(error, foundGuitar){
+       if (error) {
+           console.log(error);
+       }
+       return res.send({
+           message: "Index Guitars",
+           data: foundGuitars,
+       });
+   });
 });
+
+module.exports = router; 
+
