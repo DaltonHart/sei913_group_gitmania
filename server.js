@@ -29,13 +29,15 @@ app.use(methodOverride("_method"));
 
 /* === Routes === */
 
+
 // == Default Routes
 app.get("/", function (req, res, next) {
   return res.render("home");
 });
-
-// == Makeup Routes
+//===  Routes ===
 app.use("/makeup", controllers.makeup);
+app.use("/guitars", controllers.guitars);
+
 
 /* === Server Listener === */
 app.listen(PORT, function () {
