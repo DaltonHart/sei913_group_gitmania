@@ -44,6 +44,11 @@ app.get("/help", function (req, res) {
   });
 });
 
+// adds 404
+app.get("/*", function (req, res) {
+  res.send("404");
+});
+
 /* === Server Listener === */
 app.listen(PORT, function () {
   console.log(`Server is live and listening at localhost:${PORT}. 🤑`);
