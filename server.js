@@ -38,7 +38,7 @@ app.get("/", function (req, res, next) {
 app.use("/makeup", controllers.makeup);
 
 // == Camera Routes
-app.use("/camera", controllers.camera);
+app.use("/cameras", controllers.cameras);
 
 // fun route
 app.get("/help", function (req, res) {

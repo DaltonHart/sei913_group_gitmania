@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
-const { Makeup } = require("../models");
+const { Camera } = require("../models");
 
-// base url === /camera
+// base url === /cameras
 
 // index
 router.get("/", function (req, res) {
