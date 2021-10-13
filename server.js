@@ -37,6 +37,10 @@ app.get("/", function (req, res, next) {
 // == Makeup Routes
 app.use("/makeup", controllers.makeup);
 
+
+// ==Videogames Routes
+app.use("/videogames", controller.videogamesController);
+
 // fun route
 app.get("/help", function (req, res) {
   res.send({
