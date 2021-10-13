@@ -42,7 +42,8 @@ app.use("/makeup", controllers.makeup);
 app.use("/rock", controllers.rock);
 // == Pets Routes
 app.use("/pets", controllers.pets);
-
+// == Coin Routes
+app.use("/coin", controllers.coin);
 
 // == Fruit Routes
 app.use("/fruit", controllers.fruit);
