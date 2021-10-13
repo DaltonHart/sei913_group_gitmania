@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-model.exports = mongoose.model(
+module.exports = mongoose.model(
     "Videogames",
     new mongoose.Schema (
         {
