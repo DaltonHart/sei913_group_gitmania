@@ -37,6 +37,10 @@ app.get("/", function (req, res, next) {
 // == Makeup Routes
 app.use("/makeup", controllers.makeup);
 
+// == Coin Routes
+app.use("/coin", controllers.coin);
+
+
 /* === Server Listener === */
 app.listen(PORT, function () {
   console.log(`Server is live and listening at localhost:${PORT}. 🤑`);
