@@ -9,8 +9,10 @@ const Pet = require('../models/Pet.js');
 
 /* === Routes === */
 
+// LEARN: IT ALREADY ASSUMES PETS
+
 // INDEX for Pets
-router.get("/pets", (req, res) => {
+router.get("/", (req, res) => {
     // res.send({message: "You're seeing pets!"})
     Pet.find({}, (err, petsFound) => {
         if (err) console.log(err);
@@ -22,7 +24,7 @@ router.get("/pets", (req, res) => {
 });
 
 // SHOW for Pets
-router.get("/pets/:id", (req, res) => {
+router.get("/:id", (req, res) => {
 
     data = req.params.id
 

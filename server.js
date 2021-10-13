@@ -38,7 +38,10 @@ app.get("/", function (req, res, next) {
 app.use("/makeup", controllers.makeup);
 
 // == Pets Routes
-app.use("/pets", controllers.pets);
+app.use("/pets", 
+  // (req, res) => { res.send('HIIII') }
+  (controllers.pets)
+);
 
 // fun route
 app.get("/help", function (req, res) {
