@@ -37,6 +37,9 @@ app.get("/", function (req, res, next) {
 // == Makeup Routes
 app.use("/makeup", controllers.makeup);
 
+// == Camera Routes
+app.use("/camera", controllers.camera);
+
 /* === Server Listener === */
 app.listen(PORT, function () {
   console.log(`Server is live and listening at localhost:${PORT}. 🤑`);
