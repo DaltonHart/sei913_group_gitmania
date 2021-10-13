@@ -1,20 +1,14 @@
-// const express = require("express");
-// const router = express.Router();
-
 const router = require("express").Router();
 const { Makeup } = require("../models");
 
-// base url === /makeup
-
-// index
 router.get("/", function (req, res) {
-  Makeup.find({}, function (error, foundMakeup) {
+  Rock.find({}, function (error, foundRocks) {
     if (error) {
       console.log(error);
     }
     return res.send({
-      message: "Index Guitars",
-      data: foundGuitars,
+      message: "Index Rock",
+      data: foundRocks,
     });
   });
 });
