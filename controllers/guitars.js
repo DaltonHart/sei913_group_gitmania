@@ -10,7 +10,7 @@ const {Guitars} = require("../models");
 
 //index 
 
-router.get("/.", function (req, res){
+router.get("/", function (req, res){
    Guitars.find({}, function(error, foundGuitar){
        if (error) {
            console.log(error);
