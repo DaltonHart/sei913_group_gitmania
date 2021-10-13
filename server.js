@@ -34,6 +34,9 @@ app.get("/", function (req, res, next) {
   return res.render("home");
 });
 
+// == Makeup Routes
+app.use("/makeup", controllers.makeup);
+
 /* === Server Listener === */
 app.listen(PORT, function () {
   console.log(`Server is live and listening at localhost:${PORT}. 🤑`);
