@@ -34,9 +34,33 @@ app.use(methodOverride("_method"));
 app.get("/", function (req, res, next) {
   return res.render("home");
 });
-//===  Routes ===
-app.use("/makeup", controllers.makeup);
+
+// == Guitar Routes
 app.use("/guitars", controllers.guitars);
+// == Plant Routes
+app.use("/plants", controllers.plants);
+// == Makeup Routes
+app.use("/makeup", controllers.makeup);
+// Rock Routes
+app.use("/rock", controllers.rock);
+// == Pets Routes
+app.use("/pets", controllers.pets);
+// == Coin Routes
+app.use("/coin", controllers.coin);
+// == Fruit Routes
+app.use("/fruit", controllers.fruit);
+
+// fun route
+app.get("/help", function (req, res) {
+  res.send({
+    message: "No help was found",
+  });
+});
+
+// adds 404
+app.get("/*", function (req, res) {
+  res.send("404");
+});
 
 
 /* === Server Listener === */
