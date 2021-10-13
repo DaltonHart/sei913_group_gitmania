@@ -36,6 +36,10 @@ app.get("/", function (req, res, next) {
 
 // == Plant Routes
 app.use("/plants", controllers.plants);
+// == Makeup Routes
+app.use("/makeup", controllers.makeup);
+
+
 
 /* === Server Listener === */
 app.listen(PORT, function () {

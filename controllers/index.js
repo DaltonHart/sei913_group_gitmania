@@ -1,3 +1,5 @@
 module.exports = {
-    Plants: require(".Plants"),
+    Plants: require("./plants"),
+    makeup: require("./makeup"),
 };
+

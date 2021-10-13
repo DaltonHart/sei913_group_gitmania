@@ -14,7 +14,7 @@ router.get("/", function (req, res){
         }
         return res.send({
             message: "Index Plants",
-            data:[]
+            data:foundPlants,
         })
     })
 })
