@@ -38,9 +38,11 @@ app.get("/", function (req, res, next) {
 app.use("/plants", controllers.plants);
 // == Makeup Routes
 app.use("/makeup", controllers.makeup);
-
+// Rock Routes
+app.use("/rock", controllers.rock);
 // == Pets Routes
 app.use("/pets", controllers.pets);
+
 
 // fun route
 app.get("/help", function (req, res) {
