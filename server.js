@@ -50,6 +50,9 @@ app.use("/coin", controllers.coin);
 // == Fruit Routes
 app.use("/fruit", controllers.fruit);
 
+// == Camera Routes
+app.use("/cameras", controllers.cameras);
+
 // fun route
 app.get("/help", function (req, res) {
   res.send({

@@ -1,4 +1,5 @@
 module.exports = {
+    cameras: require("./cameras"),
     makeup: require("./makeup"),
     guitars: require("./guitars"),
     fruit: require("./fruit"),
