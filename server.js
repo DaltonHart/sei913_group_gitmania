@@ -55,7 +55,7 @@ app.use("/cameras", controllers.cameras);
 
 
 // ==Videogames Routes
-app.use("/videogames", controller.videogamesController);
+app.use("/videogames", controllers.videogamesController);
 
 // fun route
 app.get("/help", function (req, res) {
