@@ -1,4 +1,5 @@
 module.exports = {
-  Makeup: require("./Makeup"),
-  Pet: require("./Pet"),
+    Plants: require("./Plants"),
+    Makeup: require("./Makeup"),
+    Pet: require("./Pet"),
 };

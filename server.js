@@ -34,6 +34,8 @@ app.get("/", function (req, res, next) {
   return res.render("home");
 });
 
+// == Plant Routes
+app.use("/plants", controllers.plants);
 // == Makeup Routes
 app.use("/makeup", controllers.makeup);
 
