@@ -49,11 +49,8 @@ app.use("/pets", controllers.pets);
 app.use("/coin", controllers.coin);
 // == Fruit Routes
 app.use("/fruit", controllers.fruit);
-
 // == Camera Routes
 app.use("/cameras", controllers.cameras);
-
-
 // ==Videogames Routes
 app.use("/videogames", controllers.videogames);
 
