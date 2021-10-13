@@ -1,6 +1,6 @@
 // const express = require("express");
 // const router = express.Router();
-// short hand
+
 const router = require("express").Router();
 const { Makeup } = require("../models");
 
@@ -13,8 +13,8 @@ router.get("/", function (req, res) {
       console.log(error);
     }
     return res.send({
-      message: "Index Makeup",
-      data: foundMakeup,
+      message: "Index Guitars",
+      data: foundGuitars,
     });
   });
 });
