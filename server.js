@@ -37,6 +37,18 @@ app.get("/", function (req, res, next) {
 // == Makeup Routes
 app.use("/makeup", controllers.makeup);
 
+// fun route
+app.get("/help", function (req, res) {
+  res.send({
+    message: "No help was found",
+  });
+});
+
+// adds 404
+app.get("/*", function (req, res) {
+  res.send("404");
+});
+
 /* === Server Listener === */
 app.listen(PORT, function () {
   console.log(`Server is live and listening at localhost:${PORT}. 🤑`);
