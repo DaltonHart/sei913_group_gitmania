@@ -36,6 +36,7 @@ app.get("/", function (req, res, next) {
 
 // == Makeup Routes
 app.use("/makeup", controllers.makeup);
+app.use("/fruit", controllers.fruit);
 
 // fun route
 app.get("/help", function (req, res) {
