@@ -6,3 +6,8 @@ module.exports = {
     Plants: require("./Plants"),
     Pet: require("./Pet")
 };
+module.exports = {
+    Guitars: require("./Guitars"),
+};
+
+
