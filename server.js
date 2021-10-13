@@ -34,14 +34,17 @@ app.get("/", function (req, res, next) {
   return res.render("home");
 });
 
+// == Plant Routes
+app.use("/plants", controllers.plants);
 // == Makeup Routes
 app.use("/makeup", controllers.makeup);
-
-<<<<<<< HEAD
+// Rock Routes
+app.use("/rock", controllers.rock);
+// == Pets Routes
+app.use("/pets", controllers.pets);
 // == Coin Routes
 app.use("/coin", controllers.coin);
 
-=======
 // fun route
 app.get("/help", function (req, res) {
   res.send({
@@ -53,7 +56,6 @@ app.get("/help", function (req, res) {
 app.get("/*", function (req, res) {
   res.send("404");
 });
->>>>>>> development
 
 /* === Server Listener === */
 app.listen(PORT, function () {
